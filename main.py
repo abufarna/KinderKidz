@@ -3,8 +3,13 @@
 
 # Import string and random module
 import string
+
 import random
  
 # Randomly choose a letter from all the ascii_letters
 randomLetter = random.choice(string.ascii_letters)
 print(randomLetter)
+
+# If we want to randomly generate a ascii value from 'A' to 'Z':
+randomUpperLetter = chr(random.randint(ord('A'), ord('Z')))
+print(randomUpperLetter)
