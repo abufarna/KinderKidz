@@ -7,9 +7,15 @@ import string
 import random
  
 # Randomly choose a letter from all the ascii_letters
-randomLetter = random.choice(string.ascii_letters)
-print(randomLetter)
+# randomLetter = random.choice(string.ascii_letters)
+# print(randomLetter)
 
 # If we want to randomly generate a ascii value from 'A' to 'Z':
 randomUpperLetter = chr(random.randint(ord('A'), ord('Z')))
 print(randomUpperLetter)
+
+# Import random module -- no need for repetition
+## import random
+
+wordList = ['CAT', 'DOG', 'CAR', 'BAG', 'HAT', 'LEG', 'ONE', 'MAT']
+print(random.choice(wordList))
